@@ -17,7 +17,7 @@ func TestFragmentedBufferRead(t *testing.T) {
 		Id    int
 		IdStr string
 	}
-	buf := NewFragmentedBytesBuffer()
+	buf := New()
 
 	expectedObjects := make([]Tmp, 0)
 	for idx := 0; idx < count; idx++ {

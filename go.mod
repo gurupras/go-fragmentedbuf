@@ -1,4 +1,4 @@
-module github.com/gurupras/fragmented_bytes_buffer
+module github.com/gurupras/fragmentedbuf
 
 go 1.19
 

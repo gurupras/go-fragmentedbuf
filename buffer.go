@@ -11,7 +11,7 @@ type FragmentedBytesBuffer struct {
 	bufPos     int
 }
 
-func NewFragmentedBytesBuffer() *FragmentedBytesBuffer {
+func New() *FragmentedBytesBuffer {
 	return &FragmentedBytesBuffer{
 		bytesArray: make([][]byte, 0),
 		arrayPos:   0,
