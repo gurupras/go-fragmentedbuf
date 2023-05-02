@@ -1,4 +1,4 @@
-module github.com/gurupras/fragmentedbuf
+module github.com/gurupras/go-fragmentedbuf
 
 go 1.19
 
