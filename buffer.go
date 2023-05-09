@@ -1,6 +1,7 @@
 package fragmentedbuf
 
 import (
+	"bytes"
 	"io"
 	"math"
 )
@@ -47,4 +48,8 @@ func (f *FragmentedBytesBuffer) Read(b []byte) (int, error) {
 func (f *FragmentedBytesBuffer) Write(b []byte) (int, error) {
 	f.bytesArray = append(f.bytesArray, b)
 	return len(b), nil
+}
+
+func (f *FragmentedBytesBuffer) Bytes() []byte {
+	return bytes.Join(f.bytesArray, []byte(""))
 }
